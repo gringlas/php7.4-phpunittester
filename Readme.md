@@ -20,7 +20,6 @@ Use it like this in a gitlab-ci.yml, like for example used in https://vc.nettrek
 ```
 run_unittests:
     stage: test
-    #  image: php:7.4-cli
     image: gringlas/php7.4-unittester:1.0.1
     services:
       - mysql
