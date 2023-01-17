@@ -5,7 +5,7 @@ gitlab. It is assumed that your application installs phpunit itself into `vendor
 
 ## Building the image
 
-To build the docker image and make it available locally, simply invoke
+To build the docker image and make it available localy, simply invoke
 `docker build . -t gringlas/php7.4-unittester`
 
 ## Publishing the image
