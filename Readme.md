@@ -1,7 +1,7 @@
 # Source for Docker image gringlas/php7.4-unittester
 
-Use this image to power your phpunit tests in gitlab-ci, as creating this container each time a unittest is run in
-gitlab is a waste of resource and time.
+Use this image to power your phpunit with code-coverage - `phpunit --coverage-text` flag -  tests in gitlab-ci, as creating this container each time a unittest is run in
+gitlab. It is assumed that your application installs phpunit itself into `vendor/bin/` as this image won't install a copy of phpunit. 
 
 ## Building the image
 
@@ -11,11 +11,11 @@ To build the docker image and make it available locally, simply invoke
 ## Publishing the image
 
 To publish the docker image, invoke
-`docker push gringlas/php7.5-unittester:VERSIONTAG`
+`docker push gringlas/php7.4-unittester:VERSIONTAG`
 
 ## Using the image
 
-Use it like this in a gitlab-ci.yml, like for example used in https://vc.nettrek.biz/tvengels/lcms/:
+This image is used in lcms repo https://vc.nettrek.biz/tvengels/lcms/ like this:
 
 ```
 run_unittests:
